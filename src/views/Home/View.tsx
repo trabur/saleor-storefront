@@ -1,12 +1,13 @@
-import "./scss/index.scss";
-
-import * as React from "react";
 import { NextPage } from "next";
+import * as React from "react";
 
 import { channelSlug } from "@temp/constants";
+
 import { MetaWrapper } from "../../components";
 import Page from "./Page";
 import { TypedHomePageQuery } from "./queries";
+
+import "./scss/index.scss";
 
 const View: React.FC<NextPage> = () => (
   <div className="home-page">
