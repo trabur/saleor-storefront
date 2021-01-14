@@ -10,7 +10,7 @@ import { baseUrl } from "../../app/routes";
 import NavItem, { INavItem } from "./NavItem";
 
 import backImg from "../../images/arrow-back.svg";
-import logoImg from "../../images/logo.svg";
+import logoImg from "../../images/logo.png";
 
 interface NavListProps {
   items: INavItem[];
@@ -79,7 +79,7 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
                 className="side-nav__menu-item-logo"
                 onClick={hideOverlay}
               >
-                <ReactSVG path={logoImg} />
+                <img src={logoImg} alt="PRINTEDBASICS" width="250px;" />
               </Link>
               <span className="side-nav__menu-item-close" onClick={hideOverlay}>
                 <span />
