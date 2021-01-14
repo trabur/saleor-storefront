@@ -223,7 +223,12 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
 
         <div className="main-menu__center">
           <Link to={appPaths.baseUrl}>
-            <img src={logoImg} alt="PRINTEDBASICS" width="250px;" />
+            <img
+              src={logoImg}
+              alt="PRINTEDBASICS"
+              width="250px;"
+              style={{ marginTop: "0.2em" }}
+            />
           </Link>
         </div>
 
